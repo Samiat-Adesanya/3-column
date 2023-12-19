@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+}
+:root{
+    --custom-font-family-p:  'Lexend Deca';
+}
+.wrapper p{
+    font-family: var(--custom-font-family-p);
+}
+:root{
+    --custom-font-family-h1:  'Big Shoulders Display';
+}
+.wrapper h1{
+    font-family: var(--custom-font-family-h1);
+}
+section button{
+    border-radius: 20px;
+    padding: 10px 25px;
+    border: none;
+    
+}
+
+section div.col1 button:hover{
+    background-color: hsl(31, 77%, 52%);
+    border: 1px solid #ffffff;
+}
+section div.col2 button:hover{
+    background-color:hsl(180, 41%, 29%); 
+    border: 1px solid #ffffff;
+}
+section div.col3 button:hover{
+    background-color:hsl(179, 100%, 13%);
+    border: 1px solid #ffffff;
+    
+}
+section div.col1 button:hover a,section div.col2 button:hover a,section div.col3 button:hover a {
+    color: #ffffff;
+
+}
+
+section div.col1 button a{
+    text-decoration: none;
+    color: hsl(31, 77%, 52%);
+    text-align: center;
+}
+.wrapper p{
+    font-size: 12px;
+    line-height: 1.6;
+}
+section div.col2 button a{
+    text-decoration: none;
+    color: hsl(180, 41%, 29%);;
+}
+section div.col3 button a{
+    text-decoration: none;
+    color: hsl(179, 100%, 13%);
+}
+section div.col1{
+ background-color: hsl(31, 77%, 52%);
+}
+section div.col2{
+    background-color: hsl(180, 41%, 29%);
+}
+section div.col3{
+    background-color: hsl(179, 100%, 13%);
+}
+.wrapper{
+    display: flex;
+    width: 50%;
+    margin: 70px auto;
+    color: hsl(0, 0%, 95%);
+}
+div.col1{
+    border-radius: 10px 0 0 10px;
+}
+div.col3{
+    border-radius: 0 10px 10px 0;
+}
+
+section div.col1,section div.col2,section div.col3{
+    padding: 30px;
+}
+section div.col1 h1,div.col2 h1,div.col3 h1{
+    margin: 20px 0;
+}
+section div.col1 button,div.col2 button,div.col3 button{
+    margin: 40px 0;
+}
+@media((min-width:500px) and (max-width:769px)){
+div.wrapper{
+    display: block; 
+}   
+div.col1{
+    border-radius: 0;
+}
+div.col3{
+    border-radius: 0;
+}
+}
